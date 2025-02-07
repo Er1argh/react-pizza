@@ -1,0 +1,63 @@
+.root {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 15px;
+  margin-right: 15px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.searchIcon {
+  width: 22px;
+  height: 22px;
+  opacity: 0.3;
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+}
+
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  padding-left: 42px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 16px;
+
+  &:focus {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 10px 16px;
+    padding-left: 38px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+    padding: 8px 14px;
+    padding-left: 36px;
+  }
+}
+
+.clearIcon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

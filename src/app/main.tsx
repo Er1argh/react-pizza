@@ -7,7 +7,7 @@ import { store } from './store.ts'
 import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
-  <BrowserRouter>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <Provider store={store}>
       <App />
     </Provider>
